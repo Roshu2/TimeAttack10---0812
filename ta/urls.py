@@ -13,6 +13,8 @@ urlpatterns = [
     path('user/', include('user.urls')),
 
     path('post/', include('post.urls')),
+    
+    path('product/', include('product.urls')),
 
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
 ]
